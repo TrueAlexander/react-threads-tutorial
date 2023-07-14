@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "user_uuid": "c5e1e375-8934-41b0-b666-d33853d14901",
+      "id": 0,
+      "username": "Russian with Alex",
+      "handle": "Alex",
+      "bio": "Bio Alex. Bio AlexBio AlexBio AlexBio Alex Bio AlexBio Alex",
+      "link": "https://github.com/TrueAlexander",
+      "img": "https://i.imgur.com/QvICKE3.jpg",
+      "instagram_url": "https://www.instagram.com/rus_online_alex/",
+      "followers": [
+        {
+          "user_uuid": "f0570eb8-43c6-400a-b8c3-c4f5e6b8a189"
+        },
+        {
+          "user_uuid": "6c1a20d5-c49e-4ac3-bf38-ce6d0ba5d8e8"
+        }
+      ]
+    },
+    {
+      "user_uuid": "f0570eb8-43c6-400a-b8c3-c4f5e6b8a189",
+      "id": 1,
+      "username": "Alex Superprof",
+      "handle": "SuperAlex",
+      "bio": "Bio Alex. Bio AlexBio AlexBio AlexBio Alex Bio AlexBio Alex",
+      "link": "https://google.com",
+      "img": "https://i.imgur.com/rWYtZa6.png",
+      "instagram_url": "https://www.instagram.com/rus_superprof/",
+      "followers": [
+        {
+          "user_uuid": "c5e1e375-8934-41b0-b666-d33853d14901"
+        }
+      ]
+    },
+    {
+      "user_uuid": "6c1a20d5-c49e-4ac3-bf38-ce6d0ba5d8e8",
+      "id": 2,
+      "username": "Alex True",
+      "handle": "TrueAlex",
+      "bio": "Alex who is the TrueAlex",
+      "link": "https://google.com",
+      "img": "https://i.imgur.com/jONHmE5.png",
+      "instagram_url": "https://www.instagram.com/truealex/",
+      "followers": [
+        {
+          "user_uuid": "c5e1e375-8934-41b0-b666-d33853d14901"
+        }
+      ]
+    }
+  ],
+  "threads": [
+    {
+      "id": 0,
+      "timestamp": "Thu Jul 13 2023 20:00:18 GMT-0300 (Brasilia Standard Time)",
+      "thread_from": "c5e1e375-8934-41b0-b666-d33853d14901",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Hello World of threads!",
+      "likes": [
+        {
+          "uuid": "6c1a20d5-c49e-4ac3-bf38-ce6d0ba5d8e8"
+        },
+        {
+          "uuid": "f0570eb8-43c6-400a-b8c3-c4f5e6b8a189"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "timestamp": "Thu Jul 13 2023 21:10:18 GMT-0300 (Brasilia Standard Time)",
+      "thread_from": "c5e1e375-8934-41b0-b666-d33853d14901",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Awesome thread!",
+      "likes": []
+    },
+    {
+      "id": 2,
+      "timestamp": "Thu Jul 13 2023 21:22:18 GMT-0300 (Brasilia Standard Time)",
+      "thread_from": "c5e1e375-8934-41b0-b666-d33853d14901",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Another one!",
+      "likes": []
+    },
+    {
+      "id": 3,
+      "timestamp": "Thu Jul 13 2023 23:22:18 GMT-0300 (Brasilia Standard Time)",
+      "thread_from": "f0570eb8-43c6-400a-b8c3-c4f5e6b8a189",
+      "thread_to": null,
+      "reply_to": null,
+      "text": "Excited!",
+      "likes": []
+    },
+    {
+      "id": 4,
+      "timestamp": "Thu Jul 13 2023 23:24:18 GMT-0300 (Brasilia Standard Time)",
+      "thread_from": "c5e1e375-8934-41b0-b666-d33853d14901",
+      "thread_to": "f0570eb8-43c6-400a-b8c3-c4f5e6b8a189",
+      "reply_to": 3,
+      "text": "Congrats!",
+      "likes": []
+    }
+  ]
+}
