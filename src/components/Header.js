@@ -1,20 +1,20 @@
 
 
-const Header = () => {
+const Header = ({user, viewThreadsFeed, setViewThreadsFeed}) => {
   return (
     <header>
       <div className="info-container">
         <div className="user-info-container">
-          <h1>username</h1>
-          <p>handle <span className="threads-info">threads.net</span></p>
+          <h1>{user.username}</h1>
+          <p>{user.handle} <span className="threads-info">threads.net</span></p>
         </div>
         <div className="img-container">
-          <img src="" alt="profile avatar" />
+          <img src={user.img} alt="profile avatar" />
         </div>
       </div>
-      <p>bio</p>
+      <p>{user.bio}</p>
       <div className="sub-info-container">
-        <p className="sub-text">X followers • <a href="">link</a></p>
+        <p className="sub-text">{user.followers.length} followers • <a href={user.link}>{user.link.replace("https://", "")}</a></p>
       </div>
       <button 
         className="primary"
@@ -23,7 +23,18 @@ const Header = () => {
         Share Profile
       </button>
       <div className="button-container">
-
+        <button 
+          onClick={() => setViewThreadsFeed(true)}
+          className={viewThreadsFeed ? "current" : null}
+        >
+          Threads
+        </button>
+        <button
+          onClick={() => setViewThreadsFeed(false)}
+          className={!viewThreadsFeed ? "current" : null}
+        >
+          Replies
+        </button>
       </div>
     </header>
   )
